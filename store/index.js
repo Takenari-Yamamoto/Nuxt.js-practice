@@ -27,6 +27,8 @@ const createStore = () => {
                 for(let i = 0; i < state.todos.length; i++) {
                     const ob = state.todos[i];
                     if(ob.content == payload.content && ob.created == payload.created) {
+                        console.log("payloadの中身↓")
+                        console.log(payload);
                         alert('remove ' + '"' + ob.content + '"');
                         state.todos.splice(i, 1);
                         return;
