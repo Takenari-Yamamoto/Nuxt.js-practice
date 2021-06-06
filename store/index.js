@@ -5,7 +5,9 @@ const createStore = () => {
         state: () => ({
             todos: [
                 {content: 'hogehoge', created: '2019-03-31 15:30'}, 
-                {content: 'fugafuga', created: '2019-03-31 16:00'}
+                {content: 'fugafuga', created: '2019-03-31 16:00'},
+                {content: 'pokepoke', created: '2019-03-31 16:00'},
+                {content: 'taketake', created: '2019-03-31 16:00'}
             ]
         }),
         mutations: {
