@@ -8,7 +8,7 @@
     </div>
     <ul>
       <li v-for="(todo, index) in display_todos" :key="index">
-        <span>{{ todo.content }}</span><span>({{ todo.created }})</span><span>×</span>
+        <span>{{ todo.content }}</span><span>({{ todo.created }})</span><span @click="remove(todo)">×</span>
       </li>
     </ul>
   </section>
@@ -56,6 +56,9 @@ export default {
         this.content = '';
       }
     },
+    remove: function(todo) {
+      this.$store.commit('remove', todo)
+    }
   }
 }
 </script>
