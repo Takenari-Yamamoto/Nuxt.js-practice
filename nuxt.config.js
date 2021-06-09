@@ -1,3 +1,9 @@
+// import { createClient } from './plugins/contentful.js'
+// let envSet = {}
+// if (environment !== 'production') {
+//   envSet = require(`./env.${environment}.js`)
+// }
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
