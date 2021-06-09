@@ -1,6 +1,7 @@
 <template>
   <section class="container">
     <ul>
+      <h1>投稿一覧</h1>
       <li v-for="(post, index) in posts" :key="index">
         <nuxt-link :to="`/posts/${post.sys.id}`">{{
           post.fields.title
