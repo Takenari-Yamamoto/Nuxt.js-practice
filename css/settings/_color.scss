@@ -1,0 +1,25 @@
+/*
+  【色の定義方法】
+  ・https://codepen.io/meodai/full/mEvZRx このサイトでカラー名を調べる
+  ・(カラーの系統)-(カラー名) に統一する
+  ex) #bf13cd
+  → $purple-awkward-purple: #bf13cd;
+*/
+
+// 黒系
+$black : #000000;
+$black-dark-grey: #363636;
+// グレー系
+$snowberry-glay: #f0ecec;
+$light-glay: rgb(146, 145, 145);
+// 白系
+$white: #ffffff;
+// 青系
+$warm-blue: #4d5fdc;
+// 緑系
+
+// 赤系
+$radical-red: hsl(349, 100%, 61%);
+$rio-red: #8f192f;
+
+// シャドー用カラー
