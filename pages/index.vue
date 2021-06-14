@@ -14,13 +14,20 @@
         13 フォロー 0 フォロワー
       </div>
     </div>
-    <main>
-      <li v-for="(post, index) in posts" :key="index">
-         <nuxt-link :to="`/posts/${post.sys.id}`">{{
-           post.fields.title
-         }}</nuxt-link>
-       </li>
-		</main>
+    <div class="post-list">
+      <div class="post">
+        <li v-for="(post, index) in posts" :key="index">
+          <div class="post-user-image">
+            <img src="../assets/profile_test.jpeg">
+          </div>
+          <nuxt-link :to="`/posts/${post.sys.id}`">
+            <p class="username">Takenari.Y</p>
+            <p class="date">{{ post.fields.openedAt }}</p><br>
+            <p class="title">{{ post.fields.title }}</p>
+          </nuxt-link>
+        </li>
+      </div>
+		</div>
 	</div>
 </template>
 <script>
@@ -50,7 +57,7 @@ export default {
     return {
       posts: entries.items
     }
-  }
+  },
 }
 
 </script>

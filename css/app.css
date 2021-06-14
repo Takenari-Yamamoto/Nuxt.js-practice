@@ -246,7 +246,7 @@ body {
   border-bottom: thin solid #f0ecec;
 }
 
-.user-profile > .image > img {
+.image > img {
   width: 7rem;
   height: 7rem;
   border-radius: 100%;
@@ -262,13 +262,45 @@ body {
   font-weight: 900;
 }
 
-.container > ul > h1 {
-  color: #8f192f;
+.post-list {
+  background-color: #f0ecec;
 }
 
-.container > ul > li {
-  border: 1rem;
-  color: #4d5fdc;
+.post-list > .post {
+  padding: 3rem;
+}
+
+.post-list > .post > li {
+  padding: 2rem;
+  width: 80%;
+  background-color: #ffffff;
+  border: thin solid #929191;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-weight: 700;
+  font-size: 1.428rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#__layout > div > div > div.post-list > div > li > div > img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  margin-right: 1rem;
+}
+
+.username {
+  font-size: 0.8rem;
+}
+
+.date {
+  font-size: 0.8rem;
+}
+
+.title {
+  font-size: 1.428rem;
 }
 
 header {

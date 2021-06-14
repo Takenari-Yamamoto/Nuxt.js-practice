@@ -1,0 +1,39 @@
+.post-list {
+    background-color: $snowberry-glay;
+}
+
+.post-list > .post {
+    padding: 3rem;
+    
+}
+
+.post-list > .post > li {
+    padding: 2rem;
+    width: 80%;
+    background-color: $white;
+    border: thin solid $light-glay;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-weight: $bold;
+    font-size: $font-md;
+    display: flex;
+}
+
+#__layout > div > div > div.post-list > div > li > div > img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    margin-right: 1rem;
+}   
+
+.username {
+    font-size: $font-xxs;
+}
+
+.date {
+    font-size: $font-xxs;
+}
+
+.title {
+    font-size: $font-md;
+}
