@@ -1,0 +1,31 @@
+header {
+    font-size: $font-xl;
+    padding: 1rem;
+    width: 100%;
+    background-color: $black;
+    display: flex;
+    color: $white
+}
+
+header > .logo {
+    font-size: $font-xl;
+    padding-left: 1rem;
+}
+
+header > .nav-list > .link {	
+    text-decoration: none;
+    padding-top: 0.3rem;
+    color: $white;
+ }
+
+ .nav-list {
+    display: flex;
+    margin: 0 0 0 auto;
+ }
+
+ header > .nav-list > li {
+    font-size: $font-sm;
+    padding-right: 2rem;
+    text-align: right;
+ }
+

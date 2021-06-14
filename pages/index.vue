@@ -1,20 +1,34 @@
 <template>
-  <section class="container">
-    <ul>
-      <h1>投稿一覧</h1>
+	<div>
+		<Header />
+		<main>
       <li v-for="(post, index) in posts" :key="index">
-        <nuxt-link :to="`/posts/${post.sys.id}`">{{
-          post.fields.title
-        }}</nuxt-link>
-      </li>
-    </ul>
-  </section>
+         <nuxt-link :to="`/posts/${post.sys.id}`">{{
+           post.fields.title
+         }}</nuxt-link>
+       </li>
+		</main>
+	</div>
 </template>
 <script>
-import { createClient } from '~/plugins/contentful.js'
+	
+	export default {
+		components: {
+			Header,
+		}
+	};
+</script>
+
+<script>
+import { createClient } from '~/plugins/contentful.js';
+import Header from "@/components/header.vue"; // headerをインポート
 
 const client = createClient()
+
 export default {
+  components: {
+			Header,
+	},
   async asyncData({ params }) {
     // 記事一覧を取得
     const entries = await client.getEntries({
@@ -25,4 +39,7 @@ export default {
     }
   }
 }
+
 </script>
+
+
