@@ -1,7 +1,20 @@
 <template>
 	<div>
 		<Header />
-		<main>
+    <div class="bg-image">
+        <img src="../assets/bg_image.jpeg">
+      </div>
+    <div class="user-profile">
+      <div class="image">
+        <img src="../assets/profile_test.jpeg">
+      </div>
+      <div class="text">
+        <p class="username">Takenari.Y</p><br>
+        22yo / 京都⇄大阪 / 象使い / バックパッカー / プログラミング勉強中 / 尖っていこう<br>
+        13 フォロー 0 フォロワー
+      </div>
+    </div>
+    <main>
       <li v-for="(post, index) in posts" :key="index">
          <nuxt-link :to="`/posts/${post.sys.id}`">{{
            post.fields.title

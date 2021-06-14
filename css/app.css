@@ -223,6 +223,45 @@ body {
           align-items: center;
 }
 
+.bg-image {
+  position: relative;
+  width: 100%;
+  height: 10rem;
+  overflow: hidden;
+}
+
+.bg-image > img {
+  position: absolute;
+  top: -380px;
+  clip: rect(50px 100% 200px 100px);
+}
+
+.user-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding: 2rem;
+  margin: 0 auto;
+  border-bottom: thin solid #f0ecec;
+}
+
+.user-profile > .image > img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100%;
+}
+
+.user-profile > .text {
+  padding-left: 2rem;
+  font-size: 0.8rem;
+}
+
+.user-profile > .text > .username {
+  font-size: 1.143rem;
+  font-weight: 900;
+}
+
 .container > ul > h1 {
   color: #8f192f;
 }
@@ -233,25 +272,25 @@ body {
 }
 
 header {
-  font-size: 1.713rem;
-  padding: 1rem;
-  width: 100%;
-  background-color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.713rem;
   color: #ffffff;
+  background-color: #000000;
 }
 
 header > .logo {
-  font-size: 1.713rem;
   padding-left: 1rem;
+  font-size: 1.713rem;
 }
 
 header > .nav-list > .link {
-  text-decoration: none;
   padding-top: 0.3rem;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .nav-list {
@@ -262,8 +301,8 @@ header > .nav-list > .link {
 }
 
 header > .nav-list > li {
-  font-size: 1.143rem;
   padding-right: 2rem;
+  font-size: 1.143rem;
   text-align: right;
 }
 /*# sourceMappingURL=app.css.map */

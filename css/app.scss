@@ -16,11 +16,12 @@
 // objects
 @import "objects/common-container";
 @import "objects/flex-container";
+@import "objects/profile";
 
 // components
 @import "components/main";
 @import "components/list";
-@import "components/header";
+@import "components/header-component";
 
 // utilities
 @import "utilities/main";

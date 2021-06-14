@@ -1,0 +1,37 @@
+.bg-image {
+    position: relative; 
+
+    width: 100%; 
+    height: 10rem;
+    overflow: hidden;
+}
+
+.bg-image > img {
+    position: absolute; 
+    top:-380px;
+    clip:rect(50px 100% 200px 100px); 
+}
+
+.user-profile {
+    display: flex;
+    width: 90%;
+    padding : 2rem;
+    margin: 0 auto;
+    border-bottom: thin solid $snowberry-glay;
+}
+
+.user-profile > .image > img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+}
+
+.user-profile > .text {
+    padding-left: 2rem;
+    font-size: $font-xxs; 
+}
+
+.user-profile > .text > .username {
+    font-size: $font-sm;
+    font-weight: $extra-bold;
+}
