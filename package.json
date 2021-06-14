@@ -13,5 +13,13 @@
     "contentful": "^8.3.7",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.6"
+  },
+  "devDependencies": {
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-recess-order": "^2.4.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-rscss": "^0.4.0",
+    "stylelint-scss": "^3.19.0"
   }
 }

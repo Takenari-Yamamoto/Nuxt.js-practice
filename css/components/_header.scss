@@ -1,21 +1,21 @@
 header {
-    font-size: $font-xl;
-    padding: 1rem;
-    width: 100%;
-    background-color: $black;
     display: flex;
-    color: $white
+    width: 100%;
+    padding: 1rem;
+    font-size: $font-xl;
+    color: $white;
+    background-color: $black
 }
 
 header > .logo {
-    font-size: $font-xl;
     padding-left: 1rem;
+    font-size: $font-xl;
 }
 
-header > .nav-list > .link {	
-    text-decoration: none;
+header > .nav-list > .link {
     padding-top: 0.3rem;
-    color: $white;
+    color: $white;	
+    text-decoration: none;
  }
 
  .nav-list {
@@ -24,8 +24,8 @@ header > .nav-list > .link {
  }
 
  header > .nav-list > li {
-    font-size: $font-sm;
     padding-right: 2rem;
+    font-size: $font-sm;
     text-align: right;
  }
 
