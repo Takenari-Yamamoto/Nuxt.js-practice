@@ -1,0 +1,20 @@
+.post-detail {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+.post-detail > .title {
+  font-size: $font-lg;
+}
+
+.post-detail > .content {
+  font-size: $font-mds;
+  margin-top: 1rem;
+}
+
+.post-detail > .image > img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100%;
+}
