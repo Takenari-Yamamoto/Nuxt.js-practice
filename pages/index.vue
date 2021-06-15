@@ -22,7 +22,7 @@
           </div>
           <nuxt-link :to="`/posts/${post.sys.id}`">
             <p class="username">Takenari.Y</p>
-            <p class="date">{{ post.fields.openedAt }}</p><br>
+            <p class="date" v-html="getDate(post.sys.updatedAt)"></p>
             <p class="title">{{ post.fields.title }}</p>
           </nuxt-link>
         </li>
@@ -46,6 +46,9 @@ import Header from "@/components/header.vue"; // headerをインポート
 const client = createClient()
 
 export default {
+  date: {
+    posts: []
+  },
   components: {
 			Header,
 	},
@@ -57,9 +60,21 @@ export default {
     return {
       posts: entries.items
     }
+    console.log(entries.items);
+  },
+  methods: {
+    getDate(date) {
+      var date = new Date(date);
+      console.log(date);
+      var year = date.getFullYear();
+      var month = date.getMonth();
+      var day = date.getDay();
+      var hours = date.getHours();
+      var minutes = date.getMinutes();
+      var getDate =  year+"/"+month+"/"+day+" "+hours+":"+minutes;
+      return getDate;
+    },
   },
 }
 
 </script>
-
-
