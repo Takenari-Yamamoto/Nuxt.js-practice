@@ -1,0 +1,27 @@
+footer {
+  width: 90%;
+  margin: 0 auto;
+  font-size: $font-xxs;
+  text-align: center;
+}
+
+footer > div {
+  display: inline-block;
+  text-align: left;
+}
+
+footer > div > ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+footer > div > ul > li {
+  margin: 0.5rem;
+}
+
+footer > div > ul > li:nth-child(n + 11):nth-child(-n + 12) {
+  font-weight: $bold;
+}

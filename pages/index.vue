@@ -28,6 +28,7 @@
         </li>
       </div>
 		</div>
+    <Footer />
 	</div>
 </template>
 <script>
@@ -35,13 +36,15 @@
 	export default {
 		components: {
 			Header,
+      Footer
 		}
 	};
 </script>
 
 <script>
 import { createClient } from '~/plugins/contentful.js';
-import Header from "@/components/header.vue"; // headerをインポート
+import Header from "@/components/header.vue";
+import Footer from "@/components/footer.vue";
 
 const client = createClient()
 
@@ -51,6 +54,7 @@ export default {
   },
   components: {
 			Header,
+      Footer
 	},
   async asyncData({ params }) {
     // 記事一覧を取得
@@ -78,3 +82,4 @@ export default {
 }
 
 </script>
+

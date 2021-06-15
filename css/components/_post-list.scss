@@ -1,39 +1,38 @@
 .post-list {
-    background-color: $snowberry-glay;
+  background-color: $snowberry-glay;
 }
 
 .post-list > .post {
-    padding: 3rem;
-    
+  padding: 3rem;
 }
 
 .post-list > .post > li {
-    padding: 2rem;
-    width: 80%;
-    background-color: $white;
-    border: thin solid $light-glay;
-    margin: 0 auto;
-    margin-top: 2rem;
-    font-weight: $bold;
-    font-size: $font-md;
-    display: flex;
+  display: flex;
+  width: 80%;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-size: $font-md;
+  font-weight: $bold;
+  background-color: $white;
+  border: thin solid $light-glay;
 }
 
 #__layout > div > div > div.post-list > div > li > div > img {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 100%;
-    margin-right: 1rem;
-}   
-
-.username {
-    font-size: $font-xxs;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  border-radius: 100%;
 }
 
-.date {
-    font-size: $font-xxs;
+.user-name {
+  font-size: $font-xxs;
 }
 
-.title {
-    font-size: $font-md;
+.post-date {
+  font-size: $font-xxs;
+}
+
+.post-title {
+  font-size: $font-md;
 }

@@ -293,35 +293,35 @@ body {
 }
 
 .post-list > .post > li {
-  padding: 2rem;
-  width: 80%;
-  background-color: #ffffff;
-  border: thin solid #929191;
-  margin: 0 auto;
-  margin-top: 2rem;
-  font-weight: 700;
-  font-size: 1.428rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 80%;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-size: 1.428rem;
+  font-weight: 700;
+  background-color: #ffffff;
+  border: thin solid #929191;
 }
 
 #__layout > div > div > div.post-list > div > li > div > img {
   width: 2rem;
   height: 2rem;
-  border-radius: 100%;
   margin-right: 1rem;
+  border-radius: 100%;
 }
 
-.username {
+.user-name {
   font-size: 0.8rem;
 }
 
-.date {
+.post-date {
   font-size: 0.8rem;
 }
 
-.title {
+.post-title {
   font-size: 1.428rem;
 }
 
@@ -358,5 +358,36 @@ header > .nav-list > li {
   padding-right: 2rem;
   font-size: 1.143rem;
   text-align: right;
+}
+
+footer {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer > div {
+  display: inline-block;
+  text-align: left;
+}
+
+footer > div > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+footer > div > ul > li {
+  margin: 0.5rem;
+}
+
+footer > div > ul > li:nth-child(n + 11):nth-child(-n + 12) {
+  font-weight: 700;
 }
 /*# sourceMappingURL=app.css.map */

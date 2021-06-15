@@ -1,7 +1,7 @@
 <template>
 <div>
     <header class="header">
-        <h1 class="logo">Takeblog</h1>
+        <h1 class="logo"><a href="/">Takeblog</a></h1>
          <ul class="nav-list">
             <li class="link"><a href="#">Search</a></li>
             <li class="link"><a href="#">Notification</a></li>

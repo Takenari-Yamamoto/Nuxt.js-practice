@@ -38,7 +38,6 @@ export default {
     },
     getDate(date) {
       var date = new Date(date);
-      console.log(date);
       var year = date.getFullYear();
       var month = date.getMonth();
       var day = date.getDay();
